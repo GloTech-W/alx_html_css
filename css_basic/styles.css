@@ -11,6 +11,10 @@ body, main {
     }
     article {
     flex : 2;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y : auto;
     }
     aside {
@@ -21,3 +25,98 @@ body, main {
     padding : 10px;
     background-color : lightgray;
     }
+
+    body.works_on_smartphone {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #F5F5F5;
+        color: #333333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header, footer {
+        background-color: #1A1F71;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    header ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header ul li {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 1.1em;
+    }
+    
+    header ul li.logo {
+        font-size: 2em; /* Larger logo size */
+    }
+    
+    article h1, article h2, article h3 {
+        font-family: 'Roboto', sans-serif;
+        color: #1A1F71;
+        margin-bottom: 10px;
+    }
+    
+    article p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    article a {
+        color: #FFA500;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    article a:hover {
+        color: #FF7F50;
+    }
+    
+    article ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    article ul li {
+        background-color: #EAEAEA;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    
+    aside {
+        padding: 20px;
+        background-color: #EAEAEA;
+        border: 1px solid #E0E0E0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    button {
+        background-color: #FFA500;
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 4px;
+    }
+    
+    button:hover {
+        background-color: #FF7F50;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
