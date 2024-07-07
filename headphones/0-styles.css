@@ -1,175 +1,224 @@
-@font-face {
-    font-family: 'holberton_school-icon';
-    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
-    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
-      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
-      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
-      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  /* Icon Font Classes */
-  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
-    font-family: 'holberton_school-icon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  /* General Styles */
-  body {
-    font-family: source-sans-pro, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-  }
-  
-  /* Header Styles */
-  .header-background {
-    background-image: url(Images\ H/headphones_hero_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--white);
-    padding: var(--padding);
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 180px;
-    padding-right: 180px;
-  }
-  
-  .header-background nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Ensure items are centered vertically */
-    padding: 20px; /* Add padding if needed */
-    width: 100%; /* Ensure nav takes full width */
-    color: white;
-    font-size: 12px;
-  }
-  
-  .header-background nav a {
-    display: flex;
-    align-items: center; /* Center the logo vertically */
-  }
-  
-  .header-background nav img {
-    width: 160px;
-    height: auto;
-  }
-  .header-background nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .header-background nav ul li {
-    margin-left: 20px; /* Adjust spacing between list items */
-  }
-  
-  .header-background nav ul li a {
-    text-decoration: none;
-    color: var(--white);
-  }
-  .header-background .head {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: px;
-    margin-top: 200px;
-  }
-  
-  .header-background .head h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: white;
-    max-width: 600px;
-    font-size: 32px;
-  }
-  
-  .header-background .head h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: white;
-    max-width: 600px;
-    font-size: 16px;
-  }
-  
-  .header-background .head button {
-    background-color: #ff6b6b;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 14px;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .header-background .header-bottom {
-    margin-top: 40px;
-    padding: 0 20px;
-    margin-bottom: 150px;
-    text-align: center;
-    line-height: 1.5;
-    color: white;
-    max-width: 600px;
-  }
-  
-  /* Media Queries */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Desktop nav styles */
+.desktop-nav {
+  display: none; /* Hide desktop nav by default */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile nav styles */
+.mobile-nav {
+  order: -1; /* Ensure the mobile nav appears first */
+  text-align: center; /* Center the mobile nav icon and menu */
+}
+
+#menu-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#mobile-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 100%; /* Take full width */
+  text-align: center; /* Center the menu items */
+}
+
+#menu-toggle:checked ~ #mobile-menu {
+  display: block;
+}
+
+#mobile-menu li {
+  margin: 0.5em 0;
+}
+
+#mobile-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header background styles */
+.header-background {
+  background-image: url(Images\ H/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: var(--padding);
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.header-background nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure items are centered vertically */
+  padding: 20px; /* Add padding if needed */
+  width: 100%; /* Ensure nav takes full width */
+  color: white;
+  font-size: 12px;
+}
+
+.header-background nav a {
+  display: flex;
+  align-items: center; /* Center the logo vertically */
+}
+
+.header-background nav img {
+  width: 160px;
+  height: auto;
+}
+
+.header-background nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-background nav ul li {
+  margin-left: 20px; /* Adjust spacing between list items */
+}
+
+.header-background nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header-background .head {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: px;
+  margin-top: 200px;
+}
+
+.header-background .head h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+  max-width: 600px;
+  font-size: 32px;
+}
+
+.header-background .head h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: white;
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.header-background .head button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.header-background .header-bottom {
+  margin-top: 40px;
+  padding: 0 20px;
+  margin-bottom: 150px;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  max-width: 600px;
+}
+
+/* Media Queries */
 @media only screen and (max-width: 1200px) {
-    .header-background {
+  .header-background {
       padding-left: 120px;
       padding-right: 120px;
-    }
   }
-  
-  @media only screen and (max-width: 768px) {
-    .header-background {
+}
+
+@media only screen and (max-width: 768px) {
+  .header-background {
       padding-left: 80px;
       padding-right: 80px;
-    }
   }
-  
-  @media only screen and (max-width: 600px) {
-    .header-background {
+}
+
+@media only screen and (max-width: 600px) {
+  .header-background {
       padding-left: 40px;
       padding-right: 40px;
-    }
-  
-    .header-background .head {
+  }
+
+  .header-background .head {
       margin-top: 100px;
       margin-bottom: 100px;
-    }
-  
-    .header-background nav img {
-      width: 120px;
-    }
   }
-  
-  @media only screen and (max-width: 480px) {
-    .header-background {
+
+  .header-background nav img {
+      width: 120px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-background {
       padding-left: 20px;
       padding-right: 20px;
-    }
-  
-    .header-background .head {
+  }
+
+  .header-background .head {
       margin-top: 60px;
       margin-bottom: 60px;
-    }
-  
-    .header-background nav img {
-      width: 100px;
-    }
   }
+
+  .header-background nav img {
+      width: 100px;
+  }
+}
