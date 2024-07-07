@@ -1,0 +1,509 @@
+
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  /* Icon Font Classes */
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: source-sans-pro, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: white;
+  }
+  
+  /* Header Styles */
+  .header-background {
+    background-image: url(Images\ H/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    padding: var(--padding);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  
+  .header-background nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure items are centered vertically */
+    padding: 20px; /* Add padding if needed */
+    width: 100%; /* Ensure nav takes full width */
+    color: white;
+    font-size: 12px;
+  }
+  
+  .header-background nav a {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+  }
+  
+  .header-background nav img {
+    width: 160px;
+    height: auto;
+  }
+  .header-background nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-background nav ul li {
+    margin-left: 20px; /* Adjust spacing between list items */
+  }
+  
+  .header-background nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  .header-background .head {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: px;
+    margin-top: 200px;
+  }
+  
+  .header-background .head h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    max-width: 600px;
+    font-size: 32px;
+  }
+  
+  .header-background .head h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: white;
+    max-width: 600px;
+    font-size: 16px;
+  }
+  
+  .header-background .head button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .header-background .header-bottom {
+    margin-top: 40px;
+    padding: 0 20px;
+    margin-bottom: 150px;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    max-width: 600px;
+  }
+  
+  /* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .header-background {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .header-background {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .header-background {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .header-background .head {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  
+    .header-background nav img {
+      width: 120px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .header-background {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .header-background .head {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  
+    .header-background nav img {
+      width: 100px;
+    }
+  }
+
+  /* Main Section Styles */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  line-height: 1.5;
+  margin: auto;
+}
+
+section {
+  background-color: white;
+}
+
+section h2 {
+  font-size: 32px;
+}
+
+section p {
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 1.5;
+  margin: auto;
+  text-align: center;
+}
+
+.What-we-do-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 80px;
+}
+
+.What-we-do-grid div {
+  background-color: white;
+  padding: 40px;
+  border: none;
+}
+
+.What-we-do-grid img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.What-we-do-grid h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.What-we-do-grid p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .What-we-do-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .What-we-do-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .What-we-do-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .What-we-do-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10px;
+  }
+
+  .What-we-do-grid div {
+    padding: 20px;
+  }
+}
+
+/* General Styles */
+.results-section {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('Images\ H/headphones_hero_2.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+.results-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff; /* Set text color to ensure visibility against background */
+}
+
+.results-section p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff; /* Set text color to ensure visibility against background */
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  gap: 5px;
+  justify-content: center; /* Center align the grid on larger screens */
+  text-align: center;
+  padding: 0 80px; /* Adjusted padding to bring grid inside */
+}
+
+.hexagon-container {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin-bottom: 20px;
+}
+
+.pentagon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background-color: #e84545; /* Change this color as per your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pentagon .percentage {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.pentagon .description {
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .results-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+    padding: 0 60px; /* Adjusted padding for tablets */
+  }
+
+  .hexagon-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .results-section {
+    padding: 30px 0;
+  }
+
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small tablets */
+    gap: 20px; /* Increase gap for better spacing */
+    padding: 0 20px; /* Adjusted padding for small tablets */
+  }
+
+  .hexagon-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  .pentagon .percentage {
+    font-size: 1.2rem; /* Adjusted font size */
+  }
+
+  .pentagon .description {
+    font-size: 0.8rem; /* Adjusted font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .results-section {
+    padding: 20px 0;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    justify-content: center; /* Center align the grid on small screens */
+    text-align: center; /* Center align text content within grid items */
+    gap: 10px; /* Increase gap for better spacing */
+    padding: 0 10px; /* Adjusted padding for mobile */
+  }
+
+  .hexagon-container {
+    width: 110px;
+    height: 110px;
+  }
+
+  .pentagon .percentage {
+    font-size: 1rem; /* Adjusted font size */
+  }
+
+  .pentagon .description {
+    font-size: 0.7rem; /* Adjusted font size */
+  }
+}
+
+.contact-section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #e84545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 25px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #ff6b6b;
+}
+
+footer {
+  background-color: #071629;
+  color: #101010;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer .social-media img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+footer .social-media-icons {
+  display: flex;
+  gap: 15px;
+}
+
+footer .social-media-icons span {
+  font-size: 24px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer .social-media-icons span:hover {
+  color: #ff0000; /* Change this color to your desired hover color */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  align-self: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  footer section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .social-media {
+    margin-bottom: 0;
+  }
+}
