@@ -1,85 +1,38 @@
-/* General styles */
+/* Font-face rules and icon font classes */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: source-sans-pro, sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
-/* Header styles */
-header {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-}
-
-/* Desktop nav styles */
-.desktop-nav {
-  display: none; /* Hide desktop nav by default */
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 1em;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Mobile nav styles */
-.mobile-nav {
-  order: -1; /* Ensure the mobile nav appears first */
-  text-align: center; /* Center the mobile nav icon and menu */
-}
-
-#menu-toggle {
-  display: none; /* Hide the checkbox */
-}
-
-.menu-icon {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-#mobile-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-  width: 100%; /* Take full width */
-  text-align: center; /* Center the menu items */
-}
-
-#menu-toggle:checked ~ #mobile-menu {
-  display: block;
-}
-
-#mobile-menu li {
-  margin: 0.5em 0;
-}
-
-#mobile-menu li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Header background styles */
+/* Header Styles */
 .header-background {
   background-image: url(Images\ H/headphones_hero_1.jpg);
   background-repeat: no-repeat;
@@ -114,7 +67,6 @@ nav ul li a {
   width: 160px;
   height: auto;
 }
-
 .header-background nav ul {
   display: flex;
   list-style-type: none;
@@ -130,7 +82,6 @@ nav ul li a {
   text-decoration: none;
   color: var(--white);
 }
-
 .header-background .head {
   max-width: 800px;
   margin: 0 auto;
@@ -179,46 +130,47 @@ nav ul li a {
 /* Media Queries */
 @media only screen and (max-width: 1200px) {
   .header-background {
-      padding-left: 120px;
-      padding-right: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .header-background {
-      padding-left: 80px;
-      padding-right: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+
   }
 }
 
 @media only screen and (max-width: 600px) {
   .header-background {
-      padding-left: 40px;
-      padding-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .header-background .head {
-      margin-top: 100px;
-      margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .header-background nav img {
-      width: 120px;
+    width: 120px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .header-background {
-      padding-left: 20px;
-      padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header-background .head {
-      margin-top: 60px;
-      margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .header-background nav img {
-      width: 100px;
+    width: 100px;
   }
 }

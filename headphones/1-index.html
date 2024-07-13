@@ -28,18 +28,71 @@
         margin: 0 auto; 
         padding: 0 20px; 
     }
-  </style>
 
+    /* Styles for the menu button */
+    .menu-btn {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .menu-btn span {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    /* Styles for the responsive menu */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .menu-btn {
+            display: flex;
+        }
+
+        .header-background nav ul {
+            display: none;
+        }
+    }
+
+  </style>
 </head>
 <body>
   <header class="header-background">
     <nav>
       <a href="#"><img src="Images%20H/logo_headphones.png" alt="logo_headphones"></a>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
         <li><a href="#">What we do</a></li>
         <li><a href="#">Our results</a></li>
         <li><a href="#">Contact us</a></li>
       </ul>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#">What we do</a>
+        <a href="#">Our results</a>
+        <a href="#">Contact us</a>
+      </div>
     </nav>
     
     <div class="head">
@@ -56,7 +109,20 @@
   <main>
     <!-- Other content outside the header -->
   </main>
-  
+
+  <script>
+    function toggleMenu() {
+        var menu = document.getElementById('nav-menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    }
+  </script>
+</body>
+</html>
+
   <section class="What-we-do-section">
     <h2>What we do...</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
